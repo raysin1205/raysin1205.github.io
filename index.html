@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Persona 5 inspired interactive GitHub Pages personal homepage."
+    />
+    <title>RAY SIN // Creative Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="stage" aria-hidden="true"></canvas>
+    <div class="ink-layer" aria-hidden="true"></div>
+    <div class="scanline" aria-hidden="true"></div>
+
+    <a class="skip-link" href="#profile">跳到内容</a>
+
+    <header class="topbar" aria-label="站点导航">
+      <a class="brand" href="#intro" aria-label="回到首页">
+        <span class="brand-mark">RS</span>
+        <span class="brand-text">github.io</span>
+      </a>
+      <nav class="nav">
+        <a href="#profile">Profile</a>
+        <a href="#work">Work</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="content">
+      <section id="intro" class="scene scene-intro" data-scene="intro">
+        <div class="paper-strip strip-left" aria-hidden="true">OPPOSE USELESSNESS</div>
+        <div class="paper-strip strip-right" aria-hidden="true">TAKE YOUR TIME</div>
+
+        <div class="hero-lockup">
+          <p class="eyebrow">Made with code / motion / noisy ideas</p>
+          <h1>
+            <span>RAY</span>
+            <span>SIN</span>
+          </h1>
+          <p class="hero-copy">
+            Creative developer crafting fast, strange, useful web experiences.
+            Replace this line with your own one-sentence positioning.
+          </p>
+          <div class="hero-actions">
+            <a class="action action-primary" href="#work">看作品</a>
+            <a class="action action-ghost" href="#contact">联系我</a>
+          </div>
+        </div>
+
+        <aside class="resume-slab" aria-label="个人主页摘要">
+          <span class="slab-kicker">Resume</span>
+          <strong>Frontend / Creative Coding</strong>
+          <small>HTML · CSS · JS · Canvas</small>
+        </aside>
+
+        <button class="sound-tag" type="button" data-burst>
+          <span>CLICK!</span>
+        </button>
+      </section>
+
+      <section id="profile" class="scene scene-profile" data-scene="profile">
+        <div class="section-title">
+          <span>01</span>
+          <h2>基本信息</h2>
+        </div>
+
+        <div class="profile-grid">
+          <article class="cut-panel profile-card">
+            <h3>我是谁</h3>
+            <p>
+              把这里替换成你的介绍：你擅长什么、喜欢解决什么问题、希望别人记住你的哪一种气质。
+            </p>
+            <dl class="info-list">
+              <div>
+                <dt>Location</dt>
+                <dd>Shanghai / Remote</dd>
+              </div>
+              <div>
+                <dt>Role</dt>
+                <dd>Creative Developer</dd>
+              </div>
+              <div>
+                <dt>Status</dt>
+                <dd>Open to opportunities</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="cut-panel quote-panel">
+            <p>
+              “A portfolio should not just list projects. It should move like the
+              person who made them.”
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="work" class="scene scene-work" data-scene="work">
+        <div class="section-title">
+          <span>02</span>
+          <h2>作品展示</h2>
+        </div>
+
+        <div class="work-list" aria-label="项目列表">
+          <article class="project-tile" style="--accent: #ff1f1f">
+            <span class="project-index">A</span>
+            <div>
+              <h3>Interactive Resume</h3>
+              <p>一份把简历内容拆成可浏览关卡的个人主页。</p>
+            </div>
+            <a href="#" aria-label="查看 Interactive Resume">View</a>
+          </article>
+          <article class="project-tile" style="--accent: #23d6df">
+            <span class="project-index">B</span>
+            <div>
+              <h3>Motion System</h3>
+              <p>用于品牌活动页的画布动效与滚动叙事系统。</p>
+            </div>
+            <a href="#" aria-label="查看 Motion System">View</a>
+          </article>
+          <article class="project-tile" style="--accent: #ffd23f">
+            <span class="project-index">C</span>
+            <div>
+              <h3>Data Poster</h3>
+              <p>把复杂指标转成可读、可玩的动态信息海报。</p>
+            </div>
+            <a href="#" aria-label="查看 Data Poster">View</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="stack" class="scene scene-stack" data-scene="stack">
+        <div class="section-title">
+          <span>03</span>
+          <h2>技能栈</h2>
+        </div>
+
+        <div class="skill-wall">
+          <button type="button" data-burst>JavaScript</button>
+          <button type="button" data-burst>TypeScript</button>
+          <button type="button" data-burst>React</button>
+          <button type="button" data-burst>Canvas</button>
+          <button type="button" data-burst>GSAP</button>
+          <button type="button" data-burst>WebGL</button>
+          <button type="button" data-burst>Design Systems</button>
+          <button type="button" data-burst>Accessibility</button>
+        </div>
+      </section>
+
+      <section id="contact" class="scene scene-contact" data-scene="contact">
+        <div class="final-card">
+          <span class="stamp">FINAL BOSS</span>
+          <h2>一起做点醒目的东西。</h2>
+          <p>把邮箱、GitHub、作品集链接替换成你的真实信息后，就可以作为 github.io 首页部署。</p>
+          <div class="contact-row">
+            <a href="mailto:hello@example.com">hello@example.com</a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="scene-meter" aria-hidden="true">
+      <span data-meter="intro"></span>
+      <span data-meter="profile"></span>
+      <span data-meter="work"></span>
+      <span data-meter="stack"></span>
+      <span data-meter="contact"></span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
