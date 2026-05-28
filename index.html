@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Raysin 的个人主页：简介、项目和联系方式。"
+    />
+    <title>Raysin | Personal Homepage</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="主导航">
+        <a class="nav-logo" href="#top">Raysin</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-band">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Personal Homepage</p>
+            <h1>
+              <a class="hero-title-link" href="#about">
+                Raysin
+                <span class="title-avatar-preview" aria-hidden="true">
+                  <img src="./resources/asuka.jpg" alt="" />
+                </span>
+              </a>
+            </h1>
+            <p class="hero-subtitle">
+              <a
+                class="eva-easter-link"
+                href="https://www.bilibili.com/bangumi/play/ss1635?t=1294s"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span class="eva-link-text">只要微笑就好了。</span>
+                <span class="eva-preview" aria-hidden="true">
+                  <video
+                    src="./assets/eva-smile-preview.mp4"
+                    muted
+                    playsinline
+                    preload="metadata"
+                  ></video>
+                </span>
+              </a>
+            </p>
+            <div class="hero-actions" aria-label="主要链接">
+              <a class="button button-primary" href="https://github.com/raysin1205" target="_blank" rel="noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.36 6.84 9.72.5.09.68-.22.68-.49v-1.9c-2.78.62-3.37-1.22-3.37-1.22-.45-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05A9.33 9.33 0 0 1 12 6.95c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49A10.1 10.1 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z" />
+                </svg>
+                GitHub
+              </a>
+              <button
+                class="button button-ghost email-button"
+                type="button"
+                aria-label="复制邮箱 liangrx25@mails.tsinghua.edu.dn"
+                data-copy-email
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4.5 5h15A2.5 2.5 0 0 1 22 7.5v9a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 16.5v-9A2.5 2.5 0 0 1 4.5 5Zm0 2a.5.5 0 0 0-.5.5v.28l8 5.02 8-5.02V7.5a.5.5 0 0 0-.5-.5h-15Zm15 10a.5.5 0 0 0 .5-.5v-6.36l-7.47 4.69a1 1 0 0 1-1.06 0L4 10.14v6.36a.5.5 0 0 0 .5.5h15Z" />
+                </svg>
+                Email
+                <span class="email-tooltip" role="tooltip">liangrx25@mails.tsinghua.edu.dn</span>
+              </button>
+            </div>
+          </div>
+
+          <aside class="hero-portrait reveal" aria-label="阿卡林剪影">
+            <div class="portrait-orb">
+              <img src="./resources/Transparent_Akkarin.webp" alt="阿卡林" />
+            </div>
+          </aside>
+
+        </div>
+      </section>
+
+      <section class="section-band" id="about">
+        <div class="container split-layout">
+          <div class="section-intro reveal">
+            <p class="eyebrow">About</p>
+            <h2>Who I Am</h2>
+          </div>
+          <div class="text-stack reveal">
+            <p>
+              普普通通的大一新生，正在探索更多知识，也在学习 Python、前端和 AI。
+            </p>
+            <p>
+              然而目前正在不务正业, 沉迷轻小说中ing,
+              <del>已经成为“<a
+                class="literature-link"
+                href="https://zh.wikipedia.org/wiki/%E6%96%87%E5%AD%B8%E5%B0%91%E5%A5%B3"
+                target="_blank"
+                rel="noreferrer"
+              ><span class="literature-text">文学少女</span><span class="literature-note" role="tooltip">也许你真得去看一看《文学少女》。</span></a>”了...</del>
+            </p>
+            <div class="tag-row" aria-label="标签">
+              <span>Python Learning </span>
+              <span>Frontend</span>
+              <span>Freshman</span>
+              <span class="novel-tag" tabindex="0">
+                Light Novel
+                <span class="novel-card" role="tooltip">
+                  <strong>你是想看轻小说吗？</strong>
+                  <em>也许你也得去看看...</em>
+                  <span>《凉宫春日》</span>
+                  <span>《仰望半月的夜空》</span>
+                  <span>《无职转生》</span>
+                  <span>《为美好的世界献上祝福》</span>
+                  <span>...</span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band" id="projects">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="eyebrow">Projects</p>
+            <h2>Things I'm Building</h2>
+            <p>你瞧现在哪有 project 啊，这都是...</p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <span class="project-index">01</span>
+              <h3>Python Learning</h3>
+              <p>正在严肃学习 Python 中，学习基础语法。</p>
+            </article>
+            <article class="project-card reveal">
+              <span class="project-index">02</span>
+              <h3>Frontend Playground</h3>
+              <p>HTML、CSS、JavaScript 的练习， 正在尝试做一个好玩的Personal Homepage。</p>
+            </article>
+            <article class="project-card reveal">
+              <span class="project-index">03</span>
+              <h3>Vibe Coding Notes</h3>
+              <p>Vibe coding 好啊, 得学啊</p>
+            </article>
+            <article class="project-card reveal">
+              <span class="project-index">04</span>
+              <h3>Course Dealing</h3>
+              <p>不是，怎么又期末周了我说。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band contact-section" id="contact">
+        <div class="container split-layout">
+          <div class="section-intro reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Get In Touch</h2>
+          </div>
+          <div class="contact-panel reveal">
+            <p>可以从这里找到我</p>
+            <div class="contact-links">
+              <a href="mailto:liangrx25@mails.tsinghua.edu.dn">
+                <span>@</span>
+                <strong>liangrx25@mails.tsinghua.edu.dn</strong>
+              </a>
+              <a href="https://github.com/raysin1205" target="_blank" rel="noreferrer">
+                <span>GH</span>
+                <strong>github.com/raysin1205</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Raysin. Built with HTML, CSS and JavaScript.</p>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
